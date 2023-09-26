@@ -61,10 +61,10 @@ const Navbar = () => {
         ) : (
           <div className="ButtonGroup gap-8 hidden lg:flex">
             <Button component={Link} to={"/official-login"} variant="outlined">
-              Official Login
+              Admin Login
             </Button>
             <Button component={Link} to={"/citizen-login"} variant="outlined">
-              Citizen Login
+              Student Login
             </Button>
           </div>
         )}

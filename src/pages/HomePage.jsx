@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import RegisterAccount from "../components/RegisterAccount";
 import { auth } from "../utils/Firebase";
 import { isOfficial } from "../utils/FirebaseFunctions";
-import TrafficArt from "/src/assets/traffic-art.png";
+import OK from "/src/assets/ok1.png";
 import Navbar from "/src/components/Navbar";
 const HomePage = () => {
   const navigate = useNavigate();
@@ -22,12 +22,12 @@ const HomePage = () => {
       <div className="HomeContainer grid grid-cols-1 lg:grid-cols-2 items-center px-5 lg:px-20">
         <img
           className="TrafficArt hidden lg:block h-[32rem]"
-          src={TrafficArt}
+          src={OK}
           alt=""
         />
         <div>
           <h3 className="slogan mt-[25%] lg:mt-0 leading-normal font-bold text-center text-base lg:text-[2rem]">
-            REPORT TRAFFIC VIOLATIONS AND PROBLEMS ON ROAD !!!
+          Speak Up, Shape Up: Your Voice, Your College, Your Future!
           </h3>
           <RegisterAccount />
         </div>

@@ -36,7 +36,7 @@ const RegisterAccount = () => {
     "
     >
       <p className="Slogan text-sm lg:text-xl text-center">
-        Register a account to be a <b>HERO</b>
+        Register your account
       </p>
       <form
         action=""
