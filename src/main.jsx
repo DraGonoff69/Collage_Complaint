@@ -11,11 +11,16 @@ import HomePage from "./pages/HomePage";
 import OfficialDashboard from "./pages/OfficialDashboard";
 import OfficialLogin from "./pages/OfficialLogin";
 import ReportComplaint from "./pages/ReportComplaint";
+import Footer from "./components/footer";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
+    element: 
+    <>
+   
+    <HomePage />
+    </>,
   },
   {
     path: "/citizen-login",
@@ -27,7 +32,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/citizen-dashboard",
-    element: <CitizenDashboard />,
+    element: 
+    <>
+  
+    <CitizenDashboard />
+    <Footer/>
+    </>,
   },
   {
     path: "/official-dashboard",

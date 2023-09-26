@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "../utils/Firebase";
 import { isOfficial } from "../utils/FirebaseFunctions";
-import Logo from "/src/assets/logo.png";
+import Logo from "/src/assets/1logo-una.png";
 
 export const Button = styled(MuiButton)((props) => ({
   borderRadius: "25px",
@@ -42,8 +42,7 @@ const Navbar = () => {
       <div className="Navbar w-screen flex justify-between items-center px-4 py-2 lg:py-4 lg:px-8">
         <Link to="/">
           <div className="LogoGroup flex items-center gap-3">
-            <img className="logo h-8 lg:h-12" src={Logo} />
-            <h2 className="font-bold text-sm animate-typing whitespace-nowrap overflow-hidden lg:text-lg">MobilEASE</h2>
+            <img className="h-[150px]" src={Logo} />
           </div>
         </Link>
         {User ? (
