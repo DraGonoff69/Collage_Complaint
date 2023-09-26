@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
-import { faCamera } from "@fortawesome/free-solid-svg-icons";
-import { LocationSearching } from "@mui/icons-material";
+// import {fa-solid fa-file} from "@fortawesome/free-solid-svg-icons";
+//  
 import {
   Box,
   Button,
@@ -19,8 +19,9 @@ import Navbar from "../components/Navbar";
 import SpinnerModal from "../components/SpinnerModal";
 import { auth } from "../utils/Firebase";
 import { createComplaint, isOfficial } from "../utils/FirebaseFunctions";
-import { identifyLocation } from "../utils/MiscFunctions";
+// import { identifyLocation } from "../utils/MiscFunctions";
 import { Statuses } from "../utils/enums";
+import { faFile } from "@fortawesome/free-solid-svg-icons";
 
 const TextField = styled(MuiTextField)((props) => ({
   width: "80%",
@@ -114,10 +115,10 @@ const ReportComplaint = () => {
         />
         <DashboardLinkButton
           className={`${Media ? "hidden" : "block"} mx-[8vw]` }
-          icon={faCamera}
-          name={"Upload a picture/video of incident"}
+          icon={faFile}
+          name={"Upload the document"}
           onClick={() => FileInput.current.click()}
-          subtitle={"Make sure that everything is clear"}
+          subtitle={"Make sure that report is in proper format"}
         />
         <div
           className={`flex flex-col justify-center items-center mx-8 lg:mx-20 py-6 ${
@@ -147,7 +148,7 @@ const ReportComplaint = () => {
           </Button>
         </div>
         <Box ml={'8vw'}>
-          <TextField
+          {/* <TextField
             variant="outlined"
             label="Location"
             value={FormData.location.name}
@@ -165,8 +166,8 @@ const ReportComplaint = () => {
                 </ButtonBase>
               ),
             }}
-          />
-          <p className="mt-6">Reason:</p>
+          /> */}
+          <p className="mt-6">Complain:</p>
           <RadioGroup
             onChange={(e) => {
               setFormData({ ...FormData, reason: e.target.value });
@@ -174,42 +175,42 @@ const ReportComplaint = () => {
             value={FormData.reason}
           >
             <FormControlLabel
-              value="Speeding/Racing"
+              value="Administration Complain"
               control={<Radio />}
-              label="Speeding/Racing"
+              label="Administration"
             />
             <FormControlLabel
-              value="Overloading of Passengers"
+              value="Mess Complain"
               control={<Radio />}
-              label="Overloading of Passengers"
+              label="Mess"
             />
             <FormControlLabel
-              value="Driving without seat belt/Helmet"
+              value="Leave application"
               control={<Radio />}
-              label="Driving without seat belt/Helmet"
+              label="Leave"
             />
             <FormControlLabel
-              value="Illegal Overtaking"
+              value="WiFi Complain"
               control={<Radio />}
-              label="Illegal Overtaking"
+              label="Wifi"
             />
             <FormControlLabel
-              value="Potholes in Roads"
+              value="Washroom Complain"
               control={<Radio />}
-              label="Potholes in Roads"
+              label="Washroom"
             />
-            <FormControlLabel
+            {/* <FormControlLabel
               value="Pavement Defects"
               control={<Radio />}
               label="Pavement Defects"
-            />
+            /> */}
             <FormControlLabel
               value="Others"
               control={<Radio />}
               label="Others"
             />
           </RadioGroup>
-          <p className="my-2">More Information</p>
+          <p className="my-2">Additional Information</p>
           <TextField
             required
             multiline
@@ -218,13 +219,13 @@ const ReportComplaint = () => {
               setFormData({ ...FormData, additionalInfo: e.target.value });
             }}
             rows={5}
-            placeholder="Provide more information about the incident"
+            placeholder="Want to add something"
           />
           <FormControlLabel
             required
             value="terms-accepted"
             control={<Checkbox />}
-            label="By clicking this checkbox, I understood that reporting fake complaints against anyone will lead to legal actions against me."
+            label="By clicking this checkbox, I understood that reporting fake complaints against anyone will lead to actions against me."
           />
         </Box>
         <div className="flex justify-center my-8 px-40 lg:px-96">
