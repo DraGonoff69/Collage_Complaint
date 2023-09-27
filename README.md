@@ -1,6 +1,6 @@
 # MobilEASE
 
-<img src="./public/logo.png" alt="logo" width=200 height=200>
+<img src="./public/apple-touch-icon.png" alt="logo" width=200 height=200>
 
 
 > A Web-Based Traffic Complaint System used for paperless quick response system with fast approval of leave and fast action on the complaint done by student.
@@ -19,7 +19,7 @@ In our college, there is currently no efficient and organized system for student
 
 ## Screenshots
 
-| ![Screenshot 1](./doc/screenshot-1.jpg) Home Page                   | ![Screenshot 5](./doc/screenshot-6.jpg) **Login Page**         |
+| <img src="./public/homepage.jpg"  width=200 height=200> Home Page   | <img src="./public/apple-touch-icon.png" width=200 height=200> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
 | ![Screenshot 3](./doc/screenshot-3.jpg) **Report Complaint Page**   | ![Screenshot 4](./doc/screenshot-4.jpg) **Official Dashboard** |
 | ![Screenshot 5](./doc/screenshot-5.jpg) **Detailed Complaint View** | ![Screenshot 2](./doc/screenshot-2.jpg) **Citizen Dashboard**  |
