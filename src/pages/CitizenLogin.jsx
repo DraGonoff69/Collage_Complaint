@@ -6,6 +6,7 @@ import { TextField } from "../components/RegisterAccount";
 import { auth } from "../utils/Firebase";
 import { handleLogin } from "../utils/FirebaseFunctions";
 import SpinnerModal from "../components/SpinnerModal";
+import { Link } from "react-router-dom";
 const CitizenLogin = () => {
   const [FormData, setFormData] = useState({
     email: "",
@@ -84,6 +85,11 @@ const CitizenLogin = () => {
             <Button variant="contained" type="submit">
               Login
             </Button>
+            <p className="text-center cursor-pointer">
+              If not created an account please{" "}
+              <Link to="/" className="text-blue-600">sign in</Link>
+            </p>
+
           </form>
         </div>
       </div>

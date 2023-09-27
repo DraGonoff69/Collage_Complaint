@@ -4,7 +4,7 @@ import MuiTextField from "@mui/material/TextField";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { handleRegistration } from "../utils/FirebaseFunctions";
-
+import { Link } from "react-router-dom";
 export const TextField = styled(MuiTextField)((props) => ({
   width: "100%",
   [`& fieldset`]: {
@@ -126,6 +126,10 @@ const RegisterAccount = () => {
         <Button variant="contained" type="submit">
           REGISTER
         </Button>
+        <p className="text-center cursor-pointer">
+              If already have a registered account please{" "}
+              <Link to="/citizen-login" className="text-blue-600">sign in</Link>
+            </p>
       </form>
     </div>
   );
