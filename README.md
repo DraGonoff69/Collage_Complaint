@@ -19,10 +19,10 @@ In our college, there is currently no efficient and organized system for student
 
 ## Screenshots
 
-| <img src="./public/homepage.jpg"  width=200 height=200> Home Page   | <img src="./public/login.jpg" width=200 height=200> **Login Page**    |
+| <img src="./public/homepage.jpg"  width=300 height=300> Home Page   | <img src="./public/login.jpg" width=300 height=300> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| <img src="./public/reporting dashboard.jpg" alt="logo" width=200 height=200> **Report Complaint Page**   | 
-<img src="./public/student dashboard" alt="logo" width=200 height=200> **Official Dashboard** |
+| <img src="./public/reporting dashboard.jpg" alt="complaint" width=300 height=300> **Report Complaint Page**  | 
+<img src="./public/student dashboard" alt="dashboard" width=300 height=300> **Official Dashboard** |
 
 ## Languages, Frameworks, Tools used
 
