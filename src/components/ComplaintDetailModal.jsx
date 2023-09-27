@@ -24,7 +24,7 @@ import {
 import { Statuses, statusColors } from "../utils/enums";
 import CommentsTile from "./CommentsTile";
 
-const ComplaintDetailModal = ({ setDialogOpen, complaint }) => {
+const ComplaintDetailModal = ({ setDialogOpen, complaint,view }) => {
   console.log(complaint);
   const [Official, setOfficial] = useState(false);
   const [CommentBoxDisabled, setCommentBoxDisabled] = useState(true);
@@ -137,32 +137,40 @@ const ComplaintDetailModal = ({ setDialogOpen, complaint }) => {
         </div>
       </DialogContent>
 
-      <DialogActions>
-        {Official && complaint.status === Statuses.inProgress ? (
-          <>
-            <Button color="error" variant="outlined"
-              onClick={async () => {
-                await markAsRejected(complaint.id);
-                setDialogOpen(false);
-              }}
-            >
-              Mark as Rejected
-            </Button>
-            <Button
-              onClick={async () => {
-                await markAsSolved(complaint.id);
-                setDialogOpen(false);
-              }}
-              color="success"
-              variant="contained"
-            >
-              Mark as Solved
-            </Button>
-          </>
-        ) : null}
-      </DialogActions>
+     { view &&(
+          <DialogActions>
+          {Official && complaint.status === Statuses.inProgress ? (
+            <>
+              <Button color="error" variant="outlined"
+                onClick={async () => {
+                  await markAsRejected(complaint.id);
+                  setDialogOpen(false);
+                }}
+              >
+                Mark as Rejected
+              </Button>
+              <Button
+                onClick={async () => {
+                  await markAsSolved(complaint.id);
+                  setDialogOpen(false);
+                }}
+                color="success"
+                variant="contained"
+              >
+                Mark as Solved
+              </Button>
+            </>
+          ) : null}
+        </DialogActions>
+     )
+
+     }
+      
     </div>
   );
 };
 
+ComplaintDetailModal.defaultProps = {
+  view: 'True', // Set your default prop value here
+};
 export default ComplaintDetailModal;
