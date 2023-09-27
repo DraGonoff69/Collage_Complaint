@@ -21,7 +21,7 @@ In our college, there is currently no efficient and organized system for student
 
 | <img src="./public/homepage.jpg"  width=300 height=300> Home Page   | <img src="./public/login.jpg" width=300 height=300> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| <div style="display:inline-block"><img src="./public/reporting dashboard.jpg" alt="complaint" width=300 height=300 style> **Report Complaint Page**|<img src="./public/student dashboard.jpg" alt="dashboard" width=300 height=300> **Official Dashboard** |</div>
+| <div ><img src="./public/reporting dashboard.jpg" alt="complaint" width=300 height=300 style="display:inline-block"> **Report Complaint Page**|<img src="./public/student dashboard.jpg" alt="dashboard" width=300 height=300 style="display:inline-block"> **Official Dashboard** |</div>
 
 ## Languages, Frameworks, Tools used
 
