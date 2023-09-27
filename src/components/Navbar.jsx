@@ -94,8 +94,14 @@ const Navbar = () => {
             </>
           ) : (
             <>
-              <Link to={"/citizen-login"}>Citizen Login</Link>
-              <Link to={"/official-login"}>Official Login</Link>
+              <div className="text-center">
+                <button className="text-sm px-4 py-2 mt-4 block mx-auto border border-blue-500 rounded hover:bg-blue-500 hover:text-white">
+                  <Link to="/official-login">Admin Login</Link>
+                </button>
+                <button className="text-sm px-4 py-2 mt-2 block mx-auto border border-blue-500 rounded hover:bg-blue-500 hover:text-white">
+                  <Link to="/citizen-login">Student Login</Link>
+                </button>
+              </div>
             </>
           )}
         </ul>

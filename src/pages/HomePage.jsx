@@ -19,17 +19,17 @@ const HomePage = () => {
   return (
     <div className="HomePage">
       <Navbar />
-      <div className="HomeContainer grid grid-cols-1 lg:grid-cols-2 items-center px-5 lg:px-20">
+      <div className="HomeContainer grid grid-cols-1 lg:grid-cols-2 items-center px-14 lg:px-20">
         <img
           className=" hidden lg:block h-[32rem]"
           src={OK}
           alt=""
         />
         <div>
-          <h3 className="slogan mt-[25%] lg:mt-0 leading-normal font-bold text-center text-base lg:text-[2rem]">
+          <h3 className="slogan mt-[25%] lg:mt-0 leading-normal font-bold text-center text-base lg:text-[2rem] mb-5">
           Speak Up, Shape Up: Your Voice, Your College, Your Future!
           </h3>
-          <RegisterAccount />
+          <RegisterAccount/>
         </div>
       </div>
     </div>
