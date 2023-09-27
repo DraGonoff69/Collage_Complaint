@@ -11,7 +11,7 @@ const ComplaintsCard = ({ complaint }) => {
   let StatusColorEnum = Object.keys(Statuses).find(
     (key) => Statuses[key] === complaint.status
   );
-  // let view = false;
+  let view = false;
   return (
     <>
       <Dialog
@@ -20,6 +20,7 @@ const ComplaintsCard = ({ complaint }) => {
           <ComplaintDetailModal
             setDialogOpen={setDialogOpen}
             complaint={complaint}
+            view ={view}
           />
         }
       />
@@ -29,7 +30,7 @@ const ComplaintsCard = ({ complaint }) => {
       >
         <div className="flex justify-between">
           <p>Reported Date : {date.toLocaleDateString("en-IN")}</p>
-          {/* {view && ( // Conditionally render the Detailed View option
+          
             <p
               className="cursor-pointer text-sm font-semibold"
               onClick={() => {
@@ -38,7 +39,7 @@ const ComplaintsCard = ({ complaint }) => {
             >
               Detailed View
             </p>
-          )} */}
+         
         </div>
         <p className="font-bold">{complaint.reason}</p>
         <div className="flex justify-between">

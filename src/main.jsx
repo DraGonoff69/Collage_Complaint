@@ -42,6 +42,7 @@ const router = createBrowserRouter([
     <>
     <CitizenDashboard />
     <Footer/>
+    <OfficialDashboard/>
     </>,
   },
   {
