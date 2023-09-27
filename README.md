@@ -19,10 +19,10 @@ In our college, there is currently no efficient and organized system for student
 
 ## Screenshots
 
-| <img src="./public/homepage.jpg"  width=200 height=200> Home Page   | <img src="./public/apple-touch-icon.png" width=200 height=200> **Login Page**    |
+| <img src="./public/homepage.jpg"  width=200 height=200> Home Page   | <img src="./public/login.jpg" width=200 height=200> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| ![Screenshot 3](./doc/screenshot-3.jpg) **Report Complaint Page**   | ![Screenshot 4](./doc/screenshot-4.jpg) **Official Dashboard** |
-| ![Screenshot 5](./doc/screenshot-5.jpg) **Detailed Complaint View** | ![Screenshot 2](./doc/screenshot-2.jpg) **Citizen Dashboard**  |
+| <img src="./public/reporting dashboard.jpg" alt="logo" width=200 height=200> **Report Complaint Page**   | 
+<img src="./public/student dashboard" alt="logo" width=200 height=200> **Official Dashboard** |
 
 ## Languages, Frameworks, Tools used
 
