@@ -21,7 +21,7 @@ const HomePage = () => {
       <Navbar />
       <div className="HomeContainer grid grid-cols-1 lg:grid-cols-2 items-center px-5 lg:px-20">
         <img
-          className="TrafficArt hidden lg:block h-[32rem]"
+          className=" hidden lg:block h-[32rem]"
           src={OK}
           alt=""
         />

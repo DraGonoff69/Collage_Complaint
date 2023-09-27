@@ -31,7 +31,9 @@ const OfficialDashboard = () => {
         });
       }
     });
-    const unsubscribe = fetchComplaints(handleComplaintsUpdate);
+    const unsubscribe = fetchComplaints((updatedComplaints) => {
+      setComplaints(updatedComplaints);
+    });
 
     return () => {
       // Clean up the listener when the component unmounts
