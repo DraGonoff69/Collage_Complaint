@@ -3,10 +3,10 @@
 <img src="./public/apple-touch-icon.png" alt="logo" width=200 height=200>
 
 
-> A Web-Based Traffic Complaint System used for paperless quick response system with fast approval of leave and fast action on the complaint done by student.
+> A Web-Based  Complaint System used for paperless quick response system with fast approval of leave and fast action on the complaint done by student.
 ## Background / Problem Statement
 
-In our college, there is currently no efficient and organized system for students and staff to register, track, and resolve complaints regarding various campus-related issues. This lack of a streamlined process leads to several challenges, including delays in issue resolution, inefficient allocation of resources, and difficulty in accountability.
+In our college, there is currently no efficient and quick system for students and staff to register, track, and resolve complaints regarding various campus-related issues. This lack of a streamlined process leads to several challenges, including delays in issue resolution, inefficient allocation of resources, and difficulty in accountability.
 
 ## Features
 
@@ -14,7 +14,7 @@ In our college, there is currently no efficient and organized system for student
 - Progressive Web App (PWA)
 - Completely Mobile Responsive
 - Only citizen users can be created using the webpage, official credentials are given by admin
-- Ability to attach video/image of the incident while reporting
+- Ability to attach pdf of the application while reporting
 - Ability to track reported complaints
 
 ## Screenshots
