@@ -3,12 +3,10 @@
 <img src="./public/logo.png" alt="logo" width=200 height=200>
 
 
-> A Web-Based Traffic Complaint System that can be used by citizens for reporting various traffic and civic issues.
-
+> A Web-Based Traffic Complaint System used for paperless quick response system with fast approval of leave and fast action on the complaint done by student.
 ## Background / Problem Statement
 
-The problem addressed by the MobilEASE is the prevalence of traffic chaos in urban areas due to a lack of efficient means for citizens to report incidents. The current system of reporting traffic incidents is often cumbersome, time-consuming, and ineffective, resulting in delayed resolution and increased frustration among citizens. This has led to a lack of accountability and transparency in governance and has negatively impacted the quality of life in cities. The proposed solution seeks to provide a user-friendly and convenient platform for citizens to report traffic incidents directly from their mobile devices. The system will utilize GPS technology to pinpoint the location of incidents and allow users to upload photos and videos as evidence, promoting a culture of civic responsibility
-and collaboration.
+In our college, there is currently no efficient and organized system for students and staff to register, track, and resolve complaints regarding various campus-related issues. This lack of a streamlined process leads to several challenges, including delays in issue resolution, inefficient allocation of resources, and difficulty in accountability.
 
 ## Features
 
@@ -58,8 +56,5 @@ $ npm i
 
 ## Contributing
 
-This project is created as part of our semester 4 project exhibition. If you are inspired and too enthusiastic about this web application, feel free to ping me on any social medias before making any changes.
+This is the group project done for the prog-o-thon held in our institude IIIT una.
 
-## License
-
-MIT
