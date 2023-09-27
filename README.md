@@ -25,7 +25,7 @@ In our college, there is currently no efficient and quick system for students an
 
 ## Languages, Frameworks, Tools used
 
-- Figma for designing
+
 - Vite + ReactJS
 - Firebase as database (Firestore) and cloud storage
 - Tailwind CSS for styling
@@ -33,16 +33,7 @@ In our college, there is currently no efficient and quick system for students an
 
 ## Developing
 
-- Clone the repository
-```shell
-$ git clone https://github.com/vivekkj123/mobileEASE.git
-```
-- Install all dependencies
 
-```shell
-$ cd mobileEASE
-$ npm i
-```
 - Create a firebase project and create a .env file at your local directory containing configuration of that project.
 (Refer env.example for the variable names)
 
