@@ -83,7 +83,7 @@ const ReportComplaint = () => {
           setLoaderVisibile(true);
           createComplaint(FormData, Media)
             .then(() => {
-              toast.success("Complaint Reported Succesfully");
+              toast.success("Complaint Reported Successfully");
               setTimeout(() => {
                 navigate("/citizen-dashboard");
               }, 3000);
@@ -101,12 +101,12 @@ const ReportComplaint = () => {
           type="file"
           ref={FileInput}
           className="opacity-0"
-          accept="image/*, video/*"
+          accept=".pdf"
           onChange={(e) => {
             setMedia(e.target.files[0]);
             setFormData({
               ...FormData,
-              mediaType: e.target.files[0].type.split("/")[0],
+              mediaType: "pdf", // Set mediaType to "pdf"
             });
             setMediaPath(URL.createObjectURL(e.target.files[0]));
           }}
@@ -114,37 +114,32 @@ const ReportComplaint = () => {
           id=""
         />
         <DashboardLinkButton
-          className={`${Media ? "hidden" : "block"} mx-[8vw]` }
+          className={`${Media ? "hidden" : "block"} mx-[8vw]`}
           icon={faFile}
           name={"Upload the document"}
           onClick={() => FileInput.current.click()}
           subtitle={"Make sure that report is in proper format"}
         />
+        {/* ... (existing code) */}
         <div
           className={`flex flex-col justify-center items-center mx-8 lg:mx-20 py-6 ${
             Media ? "block" : "hidden"
           }`}
+
         >
-          <img
-            src={Media && FormData.mediaType === "image" ? MediaPath : null}
-            alt=""
-            className={`max-w-full w-auto my-6 h-96 object-scale-down
-          ${Media && FormData.mediaType == "image" ? "block" : "hidden"}
-          `}
+          <iframe
+            src={MediaPath} // Use MediaPath as the source for the iframe
+            title="PDF Viewer"
+            width="100%"
+            height="500px"
+
           />
-          <video
-            controls
-            src={Media && FormData.mediaType === "video" ? MediaPath : null}
-            className={`max-w-full w-auto my-6 h-96 object-scale-down
-          ${Media && FormData.mediaType == "video" ? "block" : "hidden"}
-          `}
-          ></video>
           <Button
             onClick={() => FileInput.current.click()}
             hidden={Media ? false : true}
             variant="outlined"
           >
-            Change Image
+            Change File
           </Button>
         </div>
         <Box ml={'8vw'}>
