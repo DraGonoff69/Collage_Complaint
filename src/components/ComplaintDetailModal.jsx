@@ -1,7 +1,7 @@
 import { faClockFour } from "@fortawesome/free-regular-svg-icons";
 import {
   faClose,
-  faMapMarkerAlt
+
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Send } from "@mui/icons-material";
@@ -64,7 +64,7 @@ const ComplaintDetailModal = ({ setDialogOpen, complaint,view }) => {
         <div className="">
           <div className="flex justify-between">
             <div className="flex gap-4 items-center">
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              {/* <FontAwesomeIcon icon={faMapMarkerAlt} /> */}
               <p>{complaint.location.name}</p>
             </div>
             <span
@@ -88,10 +88,10 @@ const ComplaintDetailModal = ({ setDialogOpen, complaint,view }) => {
               src={complaint.mediaPath}
             />
           ) : (
-            <video
-              controls
-              className="max-w-full w-auto h-96 object-scale-down"
+            <embed
               src={complaint.mediaPath}
+              type="application/pdf"
+              className="w-full h-96"
             />
           )}
           <h2 className="text-lg font-bold my-4">Comments</h2>
@@ -105,9 +105,8 @@ const ComplaintDetailModal = ({ setDialogOpen, complaint,view }) => {
             )}
           </div>
           <div
-            className={`${
-              complaint.status !== Statuses.inProgress ? "hidden" : "block"
-            } my-4 flex  gap-4 items-center`}
+            className={`${complaint.status !== Statuses.inProgress ? "hidden" : "block"
+              } my-4 flex  gap-4 items-center`}
           >
             <TextField
               fullWidth

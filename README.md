@@ -1,12 +1,12 @@
 # MobilEASE
 
-<img src="./public/logo.png" alt="logo" width=200 height=200>
+<img src="./public/apple-touch-icon.png" alt="logo" width=200 height=200>
 
 
-> A Web-Based Traffic Complaint System used for paperless quick response system with fast approval of leave and fast action on the complaint done by student.
+> A Web-Based  Complaint System used for paperless quick response system with fast approval of leave and fast action on the complaint done by student.
 ## Background / Problem Statement
 
-In our college, there is currently no efficient and organized system for students and staff to register, track, and resolve complaints regarding various campus-related issues. This lack of a streamlined process leads to several challenges, including delays in issue resolution, inefficient allocation of resources, and difficulty in accountability.
+In our college, there is currently no efficient and quick system for students and staff to register, track, and resolve complaints regarding various campus-related issues. This lack of a streamlined process leads to several challenges, including delays in issue resolution, inefficient allocation of resources, and difficulty in accountability.
 
 ## Features
 
@@ -14,15 +14,14 @@ In our college, there is currently no efficient and organized system for student
 - Progressive Web App (PWA)
 - Completely Mobile Responsive
 - Only citizen users can be created using the webpage, official credentials are given by admin
-- Ability to attach video/image of the incident while reporting
+- Ability to attach pdf of the application while reporting
 - Ability to track reported complaints
 
 ## Screenshots
 
-| ![Screenshot 1](./doc/screenshot-1.jpg) Home Page                   | ![Screenshot 5](./doc/screenshot-6.jpg) **Login Page**         |
+| <img src="./public/homepage.jpg"  width=400 height=400> Home Page   | <img src="./public/login.jpg" width=400 height=400> **Login Page**    |
 | ------------------------------------------------------------------- | -------------------------------------------------------------- |
-| ![Screenshot 3](./doc/screenshot-3.jpg) **Report Complaint Page**   | ![Screenshot 4](./doc/screenshot-4.jpg) **Official Dashboard** |
-| ![Screenshot 5](./doc/screenshot-5.jpg) **Detailed Complaint View** | ![Screenshot 2](./doc/screenshot-2.jpg) **Citizen Dashboard**  |
+| <div ><img src="./public/reporting dashboard.jpg" alt="complaint" width=400 height=400 style="display:inline-block"> **Report Complaint Page**|<img src="./public/student dashboard.jpg" alt="dashboard" width=400 height=400 style="display:inline-block"> **Official Dashboard** |</div>
 
 ## Languages, Frameworks, Tools used
 
