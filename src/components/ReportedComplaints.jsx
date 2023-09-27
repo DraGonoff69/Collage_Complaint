@@ -35,7 +35,7 @@ const ReportedComplaints = () => {
         ) : (
           Complaints &&
           Complaints.map((complaint) => {
-            return <ComplaintsCard key={complaint.id} complaint={complaint} />;
+            return <ComplaintsCard key={complaint.id} complaint={complaint}/>;
           })
         )}
       </div>

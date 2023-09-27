@@ -113,7 +113,7 @@ const CitizenDashboard = () => {
           />
         </div>
         <div className="hidden lg:flex">
-          <ReportedComplaints />
+          <ReportedComplaints/>
         </div>
       </div>
     </>

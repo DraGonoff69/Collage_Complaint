@@ -18,34 +18,45 @@ const router = createBrowserRouter([
     path: "/",
     element: 
     <>
-   
     <HomePage />
+    <Footer/>
     </>,
   },
   {
     path: "/citizen-login",
-    element: <CitizenLogin />,
+    element: <>
+    <CitizenLogin />
+    <Footer/>
+    </>,
   },
   {
     path: "/official-login",
-    element: <OfficialLogin />,
+    element: <>
+    <OfficialLogin />
+    <Footer/>
+    </>,
   },
   {
     path: "/citizen-dashboard",
     element: 
     <>
-  
     <CitizenDashboard />
     <Footer/>
     </>,
   },
   {
     path: "/official-dashboard",
-    element: <OfficialDashboard />,
+    element: <>
+    <OfficialDashboard />
+    <Footer/>
+    </>,
   },
   {
     path: "/report",
-    element: <ReportComplaint />,
+    element: <>
+    <ReportComplaint />
+    <Footer/>
+    </>,
   },
   {
     path: "/track-complaints",
@@ -53,6 +64,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <ReportedComplaints />
+        <Footer/>
       </>
     ),
   },
