@@ -28,6 +28,25 @@ const RegisterAccount = () => {
       setErr(null);
     }
   }, [FormData]);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (FormData.mobile.length !== 10) {
+      setErr("Phone number should be 10 digits.");
+      return;
+    }
+
+    handleRegistration(FormData)
+      .then((user) => {
+        console.log(user);
+
+        navigate("/citizen-dashboard?newUser=true");
+      })
+      .catch((err) => {
+        setErr(err.message.split(": ")[1]);
+      });
+  };
+
   return (
     <div
       className="RegisterAccount flex flex-col gap-5 items-center 
@@ -76,7 +95,12 @@ const RegisterAccount = () => {
           type="tel"
           required
           value={FormData.mobile}
-          onChange={(e) => setFormData({ ...FormData, mobile: e.target.value })}
+          onChange={(e) => {
+            const input = e.target.value.replace(/\D/g, ""); // Remove non-numeric characters
+            if (input.length <= 10) {
+              setFormData({ ...FormData, mobile: input });
+            }
+          }}
         />
         <TextField
           variant="outlined"
@@ -93,7 +117,7 @@ const RegisterAccount = () => {
           label="Confirm Password"
           type="password"
           required
-          value={FormData.confirmPassword}
+          value={FormData.confirmPassword}  
           onChange={(e) =>
             setFormData({ ...FormData, confirmPassword: e.target.value })
           }
