@@ -35,7 +35,7 @@ const CitizenDashboard = () => {
       }
 
       if (params.get("newUser")) {
-        toast.success("Registration Succesful, Welcome to Dashboard", {
+        toast.success("Registration Successful, Welcome to Dashboard", {
           icon: "👋",
         });
       }
