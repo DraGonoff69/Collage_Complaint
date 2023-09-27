@@ -118,15 +118,22 @@ export const fetchComplaintsByUser = (uid, handleComplaintsUpdate) => {
 
 export const findComplaintAuthor = async (uid) => {
   try {
-    const usersRef = collection(db, "users");
-    const q = query(usersRef, where("reportedBy", "==", uid));
+    const complaintsRef = collection(db, "complaints");
+    const q = query(complaintsRef, where("reportedBy", "==", uid));
     const querySnapshot = await getDocs(q);
-    return querySnapshot.data();
+
+    if (!querySnapshot.empty) {
+      const complaintData = querySnapshot.docs[0].data();
+      return complaintData;
+    } else {
+      return null; // No matching complaint found
+    }
   } catch (error) {
     console.error("Error fetching complaints:", error);
     throw error;
   }
 };
+
 
 export const fetchComplaints = (handleComplaintsUpdate) => {
   const complaintsCollection = collection(db, "complaints");
@@ -143,7 +150,7 @@ export const fetchComplaints = (handleComplaintsUpdate) => {
       const userData = userDoc.data();
 
       const complaintWithAuthor = {
-        id: complaintId,
+        id: complaintId,  // Add a unique id for each complaint
         author: userData.name,
         ...complaintData,
         comments: [],
@@ -182,6 +189,7 @@ export const fetchComplaints = (handleComplaintsUpdate) => {
     handleComplaintsUpdate([...updatedComplaints]);
   });
 };
+
 
 export const addComment = async (complaintID, comment) => {
   try {
