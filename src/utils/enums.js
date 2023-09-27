@@ -1,6 +1,8 @@
 const userTypes = Object.freeze({
   citizen: "citizen",
   official: "official",
+  student: "student",
+  admin: "admin",
 });
 
 const Statuses = Object.freeze({

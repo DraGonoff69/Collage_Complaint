@@ -54,13 +54,6 @@ const OfficialDashboard = () => {
       width: 150,
     },
     {
-      field: "location",
-      headerName: "Reported Location",
-      width: 200,
-
-      valueGetter: (params) => `${params.row.location.name}`,
-    },
-    {
       field: "timestamp",
       headerName: "Reported Date & Time",
       width: 200,
