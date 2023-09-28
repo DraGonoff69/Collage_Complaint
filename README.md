@@ -10,10 +10,9 @@ In our college, there is currently no efficient and quick system for students an
 
 ## Features
 
-- Two types of users - citizen and official
+- Two types of users - admin and students
 - Progressive Web App (PWA)
-- Completely Mobile Responsive
-- Only citizen users can be created using the webpage, official credentials are given by admin
+- Only student data can be created using the webpage, official credentials are given by admin
 - Ability to attach pdf of the application while reporting
 - Ability to track reported complaints
 
@@ -27,7 +26,7 @@ In our college, there is currently no efficient and quick system for students an
 
 
 - Vite + ReactJS
-- Firebase as database (Firestore) and cloud storage
+- Firebase as database (Firestore)
 - Tailwind CSS for styling
 - Material UI (MUI) for some components (Dialog, DataGrid, etc.)
 
@@ -36,6 +35,11 @@ In our college, there is currently no efficient and quick system for students an
 
 - Create a firebase project and create a .env file at your local directory containing configuration of that project.
 (Refer env.example for the variable names)
+
+- after cloning or forking the repository use,
+    $npm i on the terminal
+  
+  then
 
 - Run the server
     ```shell
@@ -46,5 +50,5 @@ In our college, there is currently no efficient and quick system for students an
 
 ## Contributing
 
-This is the group project done for the prog-o-thon held in our institude IIIT una.
+This is the group project done for the prog-o-thon held in our institude IIIT UNA by Ayush Mishra, Anshul Katiyar and Ayush Bangari.
 
