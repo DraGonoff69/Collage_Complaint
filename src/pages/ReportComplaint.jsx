@@ -74,7 +74,7 @@ const ReportComplaint = () => {
         theme="light"
       />
       <h2 className=" lg:mt-10 leading-normal font-bold text-center text-xl lg:text-[2rem] my-6 lg:text-left lg:mx-20">
-        Report a Complaint
+        Report a Complaint/ Apply a Leave
       </h2>
 
       <form
@@ -162,7 +162,7 @@ const ReportComplaint = () => {
               ),
             }}
           /> */}
-          <p className="mt-6">Complain:</p>
+          <p className="mt-6">Complain/ Leave:</p>
           <RadioGroup
             onChange={(e) => {
               setFormData({ ...FormData, reason: e.target.value });
@@ -207,7 +207,6 @@ const ReportComplaint = () => {
           </RadioGroup>
           <p className="my-2">Additional Information</p>
           <TextField
-            required
             multiline
             value={FormData.additionalInfo}
             onChange={(e) => {
