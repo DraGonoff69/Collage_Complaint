@@ -21,10 +21,10 @@ const HomePage = () => {
       <Navbar />
       <div className="HomeContainer grid grid-cols-1 lg:grid-cols-2 items-center px-14 lg:px-20">
         <img
-          className="mx-100 hidden lg:block h-[32rem] mt-75"
+          className="mx-100 hidden lg:block h-[32rem] ml-15 mt-75"
           src={OK}
           alt=""
-
+          style={{width:"550px",height:"500px",marginLeft:"50px",marginTop:"75px",borderRadius:"10px"}}
         />
         <div>
           <h3 className="slogan mt-[25%] lg:mt-0 leading-normal font-bold text-center text-base lg:text-[2rem] mb-5">
