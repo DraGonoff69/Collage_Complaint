@@ -49,7 +49,7 @@ const ComplaintDetailModal = ({ setDialogOpen, complaint,view }) => {
   return (
     <div className="">
       <DialogTitle className="flex justify-between">
-        Complaint Details
+        Complain Details
         <DialogActions>
           <FontAwesomeIcon
             onClick={() => {
@@ -65,7 +65,7 @@ const ComplaintDetailModal = ({ setDialogOpen, complaint,view }) => {
           <div className="flex justify-between">
             <div className="flex gap-4 items-center">
               {/* <FontAwesomeIcon icon={faMapMarkerAlt} /> */}
-              <p>{complaint.location.name}</p>
+              {/* <p>{complaint.location.name}</p> */}
             </div>
             <span
               className="w-30 text-center rounded-xl font-bold flex items-center text-white h-12 lg:h-6 px-4"

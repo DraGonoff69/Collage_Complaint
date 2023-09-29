@@ -90,21 +90,21 @@ const CitizenDashboard = () => {
         <div>
           <DashboardLinkButton
             icon={faEdit}
-            name={"New Complaint"}
+            name={"New Complain"}
             link={"/report"}
           />
           <DashboardLinkButton
             icon={faTrafficLight}
-            name={"Track Reported complaints"}
+            name={"Track Reported complains"}
             link={"/track-complaints"}
             className={"lg:hidden"}
           />
-          <DashboardLinkButton
+          {/* <DashboardLinkButton
             icon={faMobileScreen}
             name={"Install as an app (Mobile)"}
             onClick={handleInstall}
             className={"lg:hidden"}
-          />
+          /> */}
           <DashboardLinkButton
             icon={faSignOut}
             name={"Logout"}

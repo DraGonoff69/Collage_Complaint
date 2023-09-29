@@ -36,7 +36,7 @@ const OfficialDashboard = () => {
     });
 
     return () => {
-      // Clean up the listener when the component unmounts
+      
       unsubscribe();
     };
   }, []);
@@ -46,7 +46,7 @@ const OfficialDashboard = () => {
   let columns = [
     {
       field: "reason",
-      headerName: "Complaint Reason",
+      headerName: "Complain Reason",
       width: 300,
       headerClassName: "",
     },

@@ -33,11 +33,6 @@ const ReportComplaint = () => {
   const [Media, setMedia] = useState();
   const [MediaPath, setMediaPath] = useState("");
   const [FormData, setFormData] = useState({
-    location: {
-      name: "",
-      lat: "",
-      lng: "",
-    },
     mediaPath: "",
     reason: "",
     additionalInfo: "",
@@ -74,7 +69,7 @@ const ReportComplaint = () => {
         theme="light"
       />
       <h2 className=" lg:mt-10 leading-normal font-bold text-center text-xl lg:text-[2rem] my-6 lg:text-left lg:mx-20">
-        Report a Complaint
+        Report a Complain
       </h2>
 
       <form
@@ -83,7 +78,7 @@ const ReportComplaint = () => {
           setLoaderVisibile(true);
           createComplaint(FormData, Media)
             .then(() => {
-              toast.success("Complaint Reported Successfully");
+              toast.success("Complain Reported Successfully");
               setTimeout(() => {
                 navigate("/citizen-dashboard");
               }, 3000);
@@ -194,11 +189,6 @@ const ReportComplaint = () => {
               control={<Radio />}
               label="Washroom"
             />
-            {/* <FormControlLabel
-              value="Pavement Defects"
-              control={<Radio />}
-              label="Pavement Defects"
-            /> */}
             <FormControlLabel
               value="Others"
               control={<Radio />}
@@ -220,7 +210,7 @@ const ReportComplaint = () => {
             required
             value="terms-accepted"
             control={<Checkbox />}
-            label="By clicking this checkbox, I understood that reporting fake complaints against anyone will lead to actions against me."
+            label="By clicking this checkbox, I understood that reporting fake complains against anyone will lead to actions against me."
           />
         </Box>
         <div className="flex justify-center my-8 px-40 lg:px-96">
