@@ -157,7 +157,7 @@ const ReportComplaint = () => {
               ),
             }}
           /> */}
-          <p className="mt-6">Complain:</p>
+          <p className="mt-6">Complain/ Leave:</p>
           <RadioGroup
             onChange={(e) => {
               setFormData({ ...FormData, reason: e.target.value });
@@ -197,7 +197,6 @@ const ReportComplaint = () => {
           </RadioGroup>
           <p className="my-2">Additional Information</p>
           <TextField
-            required
             multiline
             value={FormData.additionalInfo}
             onChange={(e) => {
