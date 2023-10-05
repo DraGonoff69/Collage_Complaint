@@ -6,16 +6,7 @@ import { VitePWA } from "vite-plugin-pwa";
 const manifestForPlugin = {
   registerType: "prompt",
   includeAssets: [
-    "logo.png",
-    "logo.png",
-    "maskable_iconx48.png",
-    "maskable_iconx72.png",
-    "maskable_iconx96.png",
-    "maskable_iconx128.png",
-    "maskable_iconx192.png",
-    "maskable_iconx384.png",
-    "maskable_iconx512.png",
-    "maskable_icon.png",
+    "logo.png"
   ],
   manifest: {
     name: "College Complaint Web App",
