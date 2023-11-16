@@ -1,4 +1,3 @@
-# MobilEASE
 
 <img src="./public/apple-touch-icon.png" alt="logo" width=200 height=200>
 
